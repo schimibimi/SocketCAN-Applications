@@ -2,14 +2,14 @@
 As part of a project work with the topic 'CAN-Bus and Automotive Security', applications for replay and denial of service attacks and CAN fuzzing were created based on Linux SocketCAN.
 
 ## Compilation
-```bash
+```
 gcc <can_app>.c lib.c -o <can_app>
 ```
 
 ## Usage
 ### canreplay
 Replays CAN messages
-```bash
+```
 ./canreplay <options>
 
 -p <seconds>    Capturing period (Default 60 seconds)
@@ -24,7 +24,7 @@ Replays CAN messages
 
 ### canfuzzer
 Fuzzing CAN messages
-```bash
+```
 ./canfuzzer <options>
 
 -i <hex value>  Arbitration ID with which messages are sent
@@ -37,7 +37,7 @@ Fuzzing CAN messages
 
 ### candos
 Inject the highest priority CAN message of ID 0
-```bash
+```
 ./candos <option>
  -n <ifname>     Set the interface (Default 'vcan0')
 ```
